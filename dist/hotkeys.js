@@ -277,7 +277,7 @@
     });
     // 清除修饰键
     function clearModifier(event) {
-        var key = event.keyCode || e.which || e.charCode, i = _downKeys.indexOf(key);
+        var key = event.keyCode || event.which || event.charCode, i = _downKeys.indexOf(key);
         // 从列表中清除按压过的键
         if (i >= 0) _downKeys.splice(i, 1);
         // 修饰键 shiftKey altKey ctrlKey (command||metaKey) 清除
